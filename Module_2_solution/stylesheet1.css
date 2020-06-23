@@ -1,0 +1,111 @@
+*{
+font-family: Arial;
+box-sizing: border-box;
+}
+.row{
+width: 100%;
+}
+@media(min-width: 992px) {
+.col-lg-3 {
+float: left;
+width: 33.33%;
+}
+h2{
+padding-bottom: 40px;
+}
+section{
+height: 180px;
+}
+}
+@media(min-width: 768px) and (max-width: 991px) {
+.col-md-2 {
+float: left;
+width: 50%;
+margin-bottom: 20px;
+}
+.sub{
+margin-left: 10px;
+}
+h2{
+padding-bottom: 20px;
+}
+.col-md-1 {
+float: left;
+width: 100%
+}
+section{
+height:150px;
+}
+}
+@media(min-width: 326px) and (max-width: 767px) {
+.col-sl-1{
+float: left;
+width: 100%;
+margin-bottom: 20px;
+}
+h2{
+padding-bottom: 0px;
+}
+.sub{
+margin-left: 10px;
+}
+section{
+height:180px;
+}
+}
+@media(max-width: 325px){
+.col-xs-1{
+float: left;
+width: 100%;
+margin-bottom: 20px;
+}
+h2{
+padding-bottom: 0px;
+}
+.sub{
+margin-left: 10px;
+}
+section{
+height: 240px;
+}
+}
+h2{
+font-size: 31.5px;
+text-align: center;
+}
+section{
+position: relative;
+background-color: #003399;
+padding-top: 40px;
+border: 2px solid black;
+padding-left: 10px;
+padding-right: 10px;
+color: white;
+}
+.main{
+margin-left: 10px;
+margin-right: 10px;
+}
+.sub{
+margin-right: 10px;
+}
+span{
+font-size: 22.5px;
+position: absolute;
+top: 0px;
+right: 0px;
+background-color: yellow;
+padding-right: 40px;
+padding-left: 40px;
+border-left: 2px solid black;
+border-bottom: 2px solid black;
+}
+#food{
+background-color: #6600ff;
+}
+#delicacy{
+background-color: #9900ff;
+}
+#eats{
+background-color: #0000ff;
+}
