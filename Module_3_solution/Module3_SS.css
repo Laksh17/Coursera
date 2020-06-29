@@ -46,13 +46,9 @@ p#content{
 }
 
 /*media queries*/
-@media (min-width:576px){
+@media (min-width:768px){
 div >ul.Menu{
 	display: none;
-}
-div#main{
-	width: 97%;
-	margin: auto;
 }
 h1#title{
 	margin-bottom:15px;
