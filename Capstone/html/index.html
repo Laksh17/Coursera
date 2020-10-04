@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- BootStrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="https://kit.fontawesome.com/2f388e4078.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <h1><img src="../img/indorra.png" alt="indorra.png"/>Indorra</h1>
+  <input type="checkbox" id="check">
+  	<label id="nav-check" for="check">
+  		<i class="fas fa-bars" id="btn"></i>
+  		<i class="fas fa-minus" id="cancel"></i>
+  	</label>
+  <div id="navbar" class="sidebar">
+		<header id="header"><img src="../img/indorra.png" alt="indorra.png"/></header>	
+			<ul>
+				<li><a class="currentPage" href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/index.html">Home</a></li>
+				<li><a href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/booking.html">Booking</a></li>
+				<li><a href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/contact.html">Contact</a></li>
+			</ul>
+	</div>
+  <nav id="fullNav">
+    <ul>
+      <li><a class="currentPage" href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/index.html">Home</a></li>
+      <li><a href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/booking.html">Booking</a></li>
+      <li><a href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/contact.html">Contact</a></li>
+    </ul>  
+  </nav>  
+  <div class="slider">
+    <input type="radio" name="images" id="i1" checked>
+    <input type="radio" name="images" id="i2">
+    <input type="radio" name="images" id="i3">
+    <div id="one" class="slide-img">
+      <img id="img1" class="img-slider" src="../img/slider-1.jpg" alt="slider-1.jpg"/>
+      <p>"Only the finest of ingredients"</p>
+      <label for="i3" class="prevBtn" onclick="fadeIn()"><i class="fas fa-arrow-left"></i></label>
+      <label for="i2" class="nextBtn" onclick="fadeIn()"><i class="fas fa-arrow-right"></i></label>
+    </div>
+    <div id="two" class="slide-img">
+      <img id="img2" class="img-slider" src="../img/slider-2.jpg" alt="slider-2.jpg"/>
+      <p>"Finger-licking, authentic dishes"</p>
+      <label for="i1" class="prevBtn" onclick="fadeIn()"><i class="fas fa-arrow-left"></i></label>
+      <label for="i3" class="nextBtn" onclick="fadeIn()"><i class="fas fa-arrow-right"></i></label>
+    </div>
+    <div id="three" class="slide-img">
+      <img id="img3" class="img-slider" src="../img/slider-3.jpg" alt="slider-3.jpg"/>
+      <p>"Large menu, for a vast cuisine"</p>
+      <label for="i2" class="prevBtn" onclick="fadeIn()"><i class="fas fa-arrow-left"></i></label>
+      <label for="i1" class="nextBtn" onclick="fadeIn()"><i class="fas fa-arrow-right"></i></label>
+    </div>
+    <div class="navi">
+      <label for="i1" class="dots" id="dot1"></label>
+      <label for="i2" class="dots" id="dot2"></label>
+      <label for="i3" class="dots" id="dot3"></label>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <section>
+       <h2><span>About us</span></h2>
+       <p>
+         We at Indorra, believe in authentic practices when it comes to giving our customers a rich 
+         Asian dining experience. We have satisfied thousands of customers coming from different backgrounds
+         and cultures. Our intentionns are simple. We aim to cook the freshest of ingredients in the 
+         most authentic manner which result in our scrumptious delicacies. We hope that you would stop 
+         by with your friends and family to cherish this fine dining experience :)</p>
+    </section>
+  </div>
+  <div id="specials" class="container-fluid">
+    <section>
+    <h2><span>Specials</span></h2>
+    <p>We have listed some of our famous special dishes below. These dishes are displayed as a result of 
+      consistent positive feedback from our regular customers. We do hope that you try at least a few of them whenever 
+      you visit our restaurant :)
+    </p>
+    </section>
+    <section id="specials-section">
+      <h2>Appetizers</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Starter-2.jpg" alt="starter-2.jpg"/>
+          <h4>Maddur Vada</h4>
+          <ul>
+            <li>Category: Deep Fried</li>
+            <li>Availability: Afternoons,evenings</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Starter-3.jpg" alt="starter-3.jpg"/>
+          <h4>Paneer Tikka (Achaari)</h4>
+          <ul>
+            <li>Category: Roasted/Charred</li>
+            <li>Availability: Evenings</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Starter-1.jpg" alt="starter-1.jpg"/>
+          <h4>Spring Rolls</h4>
+          <ul>
+            <li>Category: Deep Fried</li>
+            <li>Availability: Afternoons</li>
+          </ul>
+        </div>
+      </div>
+      <h2>Entree`</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Entree-1.jpg" alt="entree-1.jpg"/>
+          <h4>Plain Dosa</h4>
+          <ul>
+            <li>Category: Deep Fried</li>
+            <li>Availability: Afternoons</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Entree-2.jpg" alt="entree-2.jpg"/>
+          <h4>Asian Herby Noodles</h4>
+          <ul>
+            <li>Category: Stir-Fried</li>
+            <li>Availability: Evenings</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Entree-3.jpg" alt="entree-3.jpg"/>
+          <h4>Roti-Sabzi</h4>
+          <ul class="li-note">
+            <li>Category: Pan-fried</li>
+            <li>Availability: Afternoons,evenings</li>
+	    <li class="li-note"><span>*Sabzi changes once in two days*</span></li>
+          </ul>
+        </div>
+      </div>
+       <h2>Desserts</h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Desserts-1.jpg" alt="desserts-1.jpg"/>
+          <h4>Butter Cookie Cake with Fruits</h4>
+          <ul>
+            <li>Category: Baked</li>
+            <li>Availability: Evenings</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Desserts-2.jpg" alt="desserts-2.jpg"/>
+          <h4>Assorted Icecreams</h4>
+          <ul>
+            <li>Category: Frozen</li>
+            <li>Availability: Afternoon, Evening</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-8 col-11 rounded mx-auto d-block">
+          <img src="../img/Dessert-4-resize.jpg" alt="dessert-3.jpg"/>
+          <h4>Indian Mithai Platter</h4>
+          <ul class="li-note">
+            <li>Category: Oil/Ghee Fried</li>
+            <li>Availability: Afternoon</li>
+	    <li class="li-note"><span>*Sweets change once in a week*</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>  
+  <div class="container-fluid" id="jumbotron">
+   <section class="row">
+     <h2 class="col-12">Hear what our customers have to say :)</h2>
+     <p class="col-md-6"> It's a beautiful space, amazing ambience, and very attentive service.
+        The food is impeccable and consistent with every visit</p>
+     <p class="col-md-6">This place is quite popular for its exceptional food and great ambiance. Highly
+        recommend this place to my friends and relatives. Hats Off to the staff.</p>
+     <p class="col-md-12">Our family has eaten here twice in the last couple of months though
+        it would be more if we lived closer! The bread is always hot and fresh, the portions generous,
+        the flavors are authentic. Best all, the management is fantastic.
+        If your looking for good Indian food this is definitely the place!</p>
+   </section>
+  </div>
+  <div class="container-fluid" id="footer">
+    <footer class="row">
+      <div class="col-sm-4">
+        <img src="../img/indorra.png" alt="indorra.png"/>
+      </div>
+      <div id="copyright" class="col-sm-4 align-text-bottom">
+        <p>&copy; Indorra | All rights reserved </p>
+      </div>
+      <div id="follow" class="col-sm-4">
+        <div id="follow-bracket">
+        <h3>FOLLOW US ON:</h3>
+        <span><i class="fab fa-twitter"></i>&nbsp;Twitter: <a href="https://twitter.com/home">@Indorra77</a> </span><br/>
+        <span><i class="fab fa-instagram"></i>&nbsp;Instagram: <a href="https://instagram.com">@Indorra77</a> </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
