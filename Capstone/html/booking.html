@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- BootStrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/booking.css">
+  <script src="https://kit.fontawesome.com/2f388e4078.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <h1><img src="../img/indorra.png" alt="indorra.png"/>Indorra</h1>
+  <input type="checkbox" id="check">
+  	<label id="nav-check" for="check">
+  		<i class="fas fa-bars" id="btn"></i>
+  		<i class="fas fa-minus" id="cancel"></i>
+  	</label>
+  <div id="navbar" class="sidebar">
+		<header id="header"><img src="../img/indorra.png" alt="indorra.png"/></header>	
+			<ul>
+				<li id="special"><a href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/index.html">Home</a></li>
+				<li><a class="currentPage" href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/booking.html">Booking</a></li>
+				<li><a href="file:///C:/Users/kalpana/Swastik%20files/Specialisation-1_Course-5/html/contact.html">Contact</a></li>
+			</ul>
+	</div>
+  <nav id="fullNav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="currentPage" href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>  
+  </nav>
+  <div id="background">
+    <section id="form" class="container">
+    <h2>Please fill in the details</h2>
+    <form class="row" id="booking-form">
+      <label for="name" class="col-sm-6">Name:</label>
+      <input type="text" id="name" name="Name" class="col-sm-6"><br>
+      <label for="e-mail" class="col-sm-6 col-12">E-mail:</label>
+      <input type="text" id="e-mail" name="E-mail" class="col-sm-6 col-12"><br>
+      <label for="date" class="col-sm-6">Date:</label>
+      <input class="col-sm-6" type="text" id="date" name="Date" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')"><br>
+
+      <label class="col-sm-4">Slot:</label>
+      <div class="col-sm-4" id="afternoon-div">
+      <input type="radio" id="afternoon" name="slot">
+      <label for="afternoon">Afternoon</label>
+      </div>
+      <div class="col-sm-4" id="evening-div">
+      <input type="radio" id="evening" name="slot">
+      <label for="evening">Evening</label><br>
+      </div>
+      <label for="guests" class="col-6">No of guests:</label>
+      <input class="col-6" type="number" id="guests" name="Guests" value="1"><br>
+
+    </form>
+	<button type="submit" id="submit-button" form="booking-form" value="Submit">Submit</button>
+    </section>
+  </div>  
+  <div class="container-fluid" id="footer">
+    <footer class="row">
+      <div class="col-sm-4">
+        <img src="../img/indorra.png" alt="indorra.png"/>
+      </div>
+      <div id="copyright" class="col-sm-4 align-text-bottom">
+        <p>&copy; Indorra | All rights reserved </p>
+      </div>
+      <div id="follow" class="col-sm-4">
+        <div id="follow-bracket">
+        <h3>FOLLOW US ON:</h3>
+        <span><i class="fab fa-twitter"></i>&nbsp;Twitter: <a href="https://twitter.com/home">@Indorra77</a> </span><br/>
+        <span><i class="fab fa-instagram"></i>&nbsp;Instagram: <a href="https://instagram.com">@Indorra77</a> </span>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
